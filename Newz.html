@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newz App</title>
+    <link rel="stylesheet" href="Newzapi.css">
+</head>
+<body>
+
+    <nav>
+         <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+         <img src="https://png.pngitem.com/pimgs/s/585-5858812_cole-nationale-de-l-aviation-civile-png-download.png">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                  <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li> 
+                  <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Fianance</li> 
+                  <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>  
+                    
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="text" class="newz-input" placeholder="e.g. Science">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+         </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+        
+        </div>
+    </main>
+
+    <template id="template-newz-card" >
+        <div class="card">
+            <div class="card-header">
+                <img src="https://png.pngitem.com/pimgs/s/107-1078720_mahendra-singh-dhoni-png-transparent-image-narendra-modi.png" alt="newz-img" id="newz-img">
+            </div>
+            <div class="card-content">
+                <h3 id="newz-title">Narendra Modi</h3>
+                <h4 class="newz-source" id="newz-source">End Gadget 31/06/2024</h4>
+                <p class="newz-desc" id="newz-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, tenetur.
+                </p>
+            </div>
+        </div>
+    </template>
+
+    <script src="Newz.js"></script>
+</body>
+</html>
